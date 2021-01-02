@@ -1,0 +1,564 @@
+@import "https://use.fontawesome.com/releases/v5.13.0/css/all.css";
+html {
+  font-size: 62.5%; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+* {
+  box-sizing: border-box; }
+
+/* Base
+------------------------------------------------------------*/
+body {
+  color: #222222;
+  background: #f2f3f5;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  font-family: "Josefin Sans",sans-serif; }
+
+a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  line-height: 18px;
+  display: inline-block;
+  color: #222222;
+  font-size: 18px;
+  font-size: 1.8rem; }
+
+ul {
+  margin: 0; }
+  ul li {
+    list-style: none; }
+
+p {
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-size: 1.8rem; }
+
+/* Align
+------------------------------------------------------------*/
+.center {
+  text-align: center; }
+
+/* Layout
+------------------------------------------------------------*/
+.block-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.button {
+  margin: 32px 16px;
+  display: block;
+  text-align: center; }
+
+/* Header
+------------------------------------------------------------*/
+header {
+  padding: 0 5%;
+  width: 100%; }
+  header h1 {
+    font-size: 42px;
+    font-size: 4.2rem;
+    text-align: center; }
+
+.main {
+  margin: 15px auto 0 auto;
+  padding: 0 5%;
+  width: 100%; }
+  .main .wrapper {
+    display: flex;
+    flex-wrap: wrap; }
+    .main .wrapper .button {
+      width: 25%;
+      margin: 36px 0; }
+  .main .button1 a {
+    position: relative;
+    padding-bottom: 7px; }
+    .main .button1 a:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #066594;
+      opacity: 0;
+      transform: translateY(3px);
+      transition: opacity .2s ease, transform .2s ease; }
+    .main .button1 a:hover::after {
+      opacity: 1;
+      transform: translateY(0); }
+  .main .button2 a {
+    position: relative;
+    padding-bottom: 7px; }
+    .main .button2 a:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #066594;
+      opacity: 1;
+      transform: translateY(0px);
+      transition: all .2s ease; }
+    .main .button2 a:hover::after {
+      opacity: 0;
+      transform: translateY(3px); }
+  .main .button3 a {
+    position: relative;
+    padding: 0 2px 7px 2px; }
+    .main .button3 a:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: #066594;
+      opacity: 1;
+      transition: all .3s ease; }
+    .main .button3 a:hover::after {
+      width: 100%; }
+  .main .button4 a {
+    position: relative;
+    padding: 0 2px 7px 2px; }
+    .main .button4 a:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 2px;
+      background: #066594;
+      opacity: 1;
+      transform: scaleX(0);
+      transform-origin: bottom left;
+      transition: all .4s ease-in-out; }
+    .main .button4 a:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom right; }
+  .main .button5 a {
+    position: relative;
+    padding: 0 5px; }
+    .main .button5 a:after {
+      content: "";
+      position: absolute;
+      bottom: 30%;
+      left: -1px;
+      width: 100%;
+      height: 3px;
+      background: #066594;
+      opacity: 1;
+      transform: scaleX(0);
+      transform-origin: bottom left;
+      transition: all .3s ease-in-out; }
+    .main .button5 a:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom right; }
+  .main .button6 a {
+    position: relative;
+    padding: 0 2px 7px 2px; }
+    .main .button6 a:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 2px;
+      background: #066594;
+      opacity: 1;
+      transform: scaleX(1);
+      transform-origin: bottom right;
+      transition: all .4s ease-in-out; }
+    .main .button6 a:hover::after {
+      transform: scaleX(0);
+      transform-origin: bottom left; }
+  .main .button7 a {
+    position: relative;
+    padding: 7px 2px; }
+    .main .button7 a:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 2px;
+      background: #066594;
+      opacity: 1;
+      transform: scaleX(0);
+      transform-origin: top right;
+      transition: all .3s ease-in-out; }
+    .main .button7 a:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 2px;
+      background: #066594;
+      opacity: 1;
+      transform: scaleX(0);
+      transform-origin: bottom left;
+      transition: all .3s ease-in-out; }
+    .main .button7 a:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom right; }
+    .main .button7 a:hover::before {
+      transform: scaleX(1);
+      transform-origin: top left; }
+  .main .button8 a {
+    position: relative;
+    padding: 7px 2px; }
+    .main .button8 a:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 2px;
+      background: #066594;
+      opacity: 0;
+      transform: translateY(-3px);
+      transition: all .4s ease; }
+    .main .button8 a:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 2px;
+      background: #066594;
+      opacity: 0;
+      transform: translateY(3px);
+      transition: all .4s ease; }
+    .main .button8 a:hover::after {
+      transform: translateY(0);
+      opacity: 1; }
+    .main .button8 a:hover::before {
+      transform: translateY(0);
+      opacity: 1; }
+  .main .button9 a {
+    position: relative;
+    padding: 0 15px;
+    line-height: 35px;
+    overflow: hidden;
+    border: solid 1px #066594; }
+    .main .button9 a:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #066594;
+      transform: translateX(-100px);
+      transition: transform .3s ease-in;
+      z-index: -2; }
+    .main .button9 a:hover {
+      color: #fff; }
+    .main .button9 a:hover::before {
+      transform: translateX(0);
+      transition: transform .3s ease-out; }
+  .main .button10 a {
+    position: relative;
+    padding: 0px 15px;
+    overflow: hidden;
+    line-height: 35px;
+    border: solid 1px #066594; }
+    .main .button10 a:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #066594;
+      transform: translateY(100%);
+      transition: transform .2s ease-in;
+      z-index: -2; }
+    .main .button10 a:hover {
+      color: #fff; }
+    .main .button10 a:hover::before {
+      transform: translateY(0);
+      transition: transform .2s ease-out; }
+  .main .button11 a {
+    position: relative;
+    padding: 0px 15px;
+    overflow: hidden;
+    line-height: 35px;
+    transform: scale(1, 1);
+    transition: all ease .2s; }
+    .main .button11 a:hover {
+      transform: scale(1.2, 1.2); }
+  .main .button12 a {
+    position: relative;
+    padding: 0px 15px;
+    overflow: hidden;
+    line-height: 35px; }
+    .main .button12 a:hover {
+      animation: swing 1s ease;
+      animation-iteration-count: 1; }
+@keyframes swing {
+  15% {
+    transform: translateX(5px); }
+  30% {
+    transform: translateX(-5px); }
+  50% {
+    transform: translateX(3px); }
+  65% {
+    transform: translateX(-3px); }
+  80% {
+    transform: translateX(2px); }
+  100% {
+    transform: translateX(0); } }
+  .main .button13 a {
+    padding: 0px 15px;
+    line-height: 35px;
+    transition: .2s ease;
+    transform: translateY(3px);
+    border: 1px solid #066594; }
+    .main .button13 a:hover {
+      transform: translateY(0);
+      color: #fff;
+      background: #066594; }
+  .main .button14 a {
+    padding: 0px 15px;
+    line-height: 35px;
+    transition: .2s ease;
+    border: 1px solid #066594;
+    background: #066594;
+    color: #fff; }
+    .main .button14 a:hover {
+      color: #066594;
+      background: #f2f3f5; }
+  .main .button15 a {
+    padding: 0px 15px;
+    line-height: 35px;
+    transition: .2s ease;
+    border: 1px solid #066594;
+    background: #066594;
+    color: #fff;
+    box-shadow: 0px 3px 1px 0px rgba(87, 87, 89, 0.7);
+    transform: translateY(-3px); }
+    .main .button15 a:hover {
+      transform: translateY(0);
+      box-shadow: none; }
+  .main .button16 a {
+    padding: 0px 15px;
+    line-height: 35px;
+    transition: .2s ease;
+    transform: translateY(1px);
+    border: 1px solid #066594;
+    box-shadow: 1px 2px 2px rgba(87, 87, 89, 0.7); }
+    .main .button16 a:hover {
+      transform: translateY(0);
+      box-shadow: 1px 4px 8px rgba(87, 87, 89, 0.7); }
+  .main .button17 a {
+    position: relative;
+    padding: 0px 15px;
+    line-height: 35px;
+    background: #066594;
+    color: #fff;
+    overflow: hidden; }
+    .main .button17 a:after {
+      position: absolute;
+      content: "";
+      width: 8px;
+      height: 150px;
+      background: rgba(245, 251, 252, 0.4);
+      transform: rotate(35deg) translate3d(-1000%, 0px, 0);
+      top: 0px;
+      left: 0px; }
+    .main .button17 a:hover::after {
+      transform: translate3d(200px, 0, 0);
+      transition: .7s ease-out; }
+  .main .button18 a {
+    padding: 0px 35px 0 20px;
+    line-height: 35px;
+    transition: .3s ease;
+    color: #066594;
+    position: relative;
+    border: 1px solid #066594; }
+    .main .button18 a::after {
+      position: absolute;
+      top: 38%;
+      right: 20px;
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-top: 1px solid #066594;
+      border-right: 1px solid #066594;
+      transform: rotate(45deg);
+      transition: .1s ease-in; }
+    .main .button18 a:hover::after {
+      right: 15px; }
+  .main .button19 a {
+    line-height: 35px;
+    transition: .3s ease;
+    color: #066594;
+    position: relative;
+    border: 1px solid #066594; }
+    .main .button19 a span {
+      transform: translateX(0);
+      transition: all .15s ease-in;
+      display: block;
+      padding: 0 30px; }
+      .main .button19 a span::after {
+        position: absolute;
+        top: 38%;
+        left: -5px;
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-top: 1px solid #066594;
+        border-right: 1px solid #066594;
+        transform: rotate(45deg);
+        transition: all .15s ease-in;
+        opacity: 0; }
+      .main .button19 a span:hover {
+        transform: translateX(5px); }
+      .main .button19 a span:hover::after {
+        opacity: 1;
+        left: 0px; }
+  .main .button20 a {
+    line-height: 35px;
+    padding: 0 17px 0 30px;
+    transition: .3s ease;
+    color: #066594;
+    position: relative;
+    border: 1px solid #066594; }
+    .main .button20 a span {
+      transition: all .2s ease-in;
+      display: inline-block; }
+    .main .button20 a i {
+      opacity: 0;
+      transition: .2s ease-in;
+      margin-left: 7px;
+      transform: translateX(-5px); }
+    .main .button20 a:hover {
+      background: #066594; }
+      .main .button20 a:hover span {
+        transform: translateX(-5px);
+        color: #fff; }
+      .main .button20 a:hover i {
+        opacity: 1;
+        transform: translateX(0);
+        color: #fff; }
+  .main .button21 a {
+    position: relative;
+    padding: 0 30px;
+    line-height: 35px;
+    color: #066594;
+    overflow: hidden;
+    transition: color .2s ease-in;
+    border: 1px solid #066594; }
+    .main .button21 a:hover {
+      color: #fff;
+      transition: color .2s ease-out; }
+    .main .button21 a:before {
+      position: absolute;
+      content: "";
+      width: 150%;
+      height: 550%;
+      background: #066594;
+      transform: rotate(45deg) translate3d(-50%, 55%, 0);
+      top: 0px;
+      left: 0px;
+      transition: .3s ease-in;
+      z-index: -2; }
+    .main .button21 a:hover::before {
+      transform: rotate(45deg) translate3d(-50%, -25%, 0);
+      transition: .25s ease-out; }
+  .main .button22 a {
+    position: relative;
+    padding: 0 30px;
+    line-height: 35px;
+    color: #066594;
+    overflow: hidden;
+    transition: color .2s ease-in;
+    border: 1px solid #066594; }
+    .main .button22 a:hover {
+      color: #fff;
+      transition: color .2s ease-out; }
+    .main .button22 a:before {
+      position: absolute;
+      content: "";
+      width: 150%;
+      height: 550%;
+      background: #066594;
+      transform: rotate(45deg) translate3d(-115%, -20%, 0);
+      top: 0px;
+      left: 0px;
+      transition: .3s ease-in;
+      z-index: -2; }
+    .main .button22 a:hover::before {
+      transform: rotate(45deg) translate3d(-45%, -20%, 0);
+      transition: .25s ease-out; }
+  .main .button23 a {
+    position: relative;
+    padding: 0 30px;
+    line-height: 35px;
+    color: #066594;
+    overflow: hidden;
+    transition: color .2s ease-in;
+    border: 1px solid #066594; }
+    .main .button23 a:hover {
+      color: #fff;
+      transition: color .2s ease-out; }
+    .main .button23 a:before {
+      position: absolute;
+      content: "";
+      width: 10px;
+      height: 10px;
+      background: #066594;
+      transform: translate3d(0%, 0%, 0) scale3d(0, 0, 0);
+      top: -20%;
+      left: -10%;
+      border-radius: 50%;
+      transition: .35s ease-in;
+      z-index: -2;
+      overflow: hidden; }
+    .main .button23 a:hover::before {
+      transform: translate3d(20%, 20%, 0) scale3d(30, 30, 30);
+      transition: .35s ease-out; }
+  .main .button24 a {
+    position: relative;
+    padding: 0 30px;
+    line-height: 35px;
+    color: #066594;
+    overflow: hidden;
+    transition: color .2s ease-in;
+    border: 1px solid #066594; }
+    .main .button24 a:hover {
+      color: #fff;
+      transition: color .2s ease-out; }
+    .main .button24 a:before {
+      position: absolute;
+      content: "";
+      width: 10px;
+      height: 10px;
+      background: #066594;
+      transform: translate3d(0%, 0%, 0) scale3d(0, 0, 0);
+      bottom: -10%;
+      left: -10%;
+      border-radius: 50%;
+      transition: .35s ease-in;
+      z-index: -2;
+      overflow: hidden; }
+    .main .button24 a:hover::before {
+      transform: translate3d(20%, 0%, 0) scale3d(30, 30, 30);
+      transition: .35s ease-out; }
+  .main .button25 a {
+    padding: 0px 30px;
+    line-height: 35px;
+    transition: .3s ease;
+    border-color: #f2f3f5;
+    box-shadow: 3px 3px 6px #cfd0d1 ,-3px -3px 6px #fff; }
+    .main .button25 a:hover {
+      transition: .3s ease;
+      box-shadow: inset 2px 2px 5px #cfd0d1, inset -3px -3px 7px #fff; }
+
+/*# sourceMappingURL=sample.css.map */
